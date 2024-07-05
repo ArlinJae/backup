@@ -1,117 +1,14 @@
 # Setting Up A New Mac
-#docs
+I’m writing this guide inspired by my girlfriend who loses and buys a new Mac on average once a year — helping her set up her new Mac reminded me I should probably do a better job documenting the current setup I have on my Mac.
 
-I'm writing this guide inspired by my girlfriend who loses and buys a new Mac on average once a year - helping her set up her new Mac reminded me I should probably do a better job documenting the current setup I have on my Mac.
-
-## Installing Brew
-[Homebrew](https://brew.sh) is arguably the best app manager in the market right now and makes handling a bunch of different apps a lot easier on MacOS.
-
-To download Homebrew, you first have to fire up a terminal and run the following command -
-
-```*Bash*
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Next, you're going to validate the download, which would be running the following command. 
-
-```*bash*
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-Once you're done with this, you're going to run a download script which will automatically download all the files listed in the list of brew packages to download. 
-
-#### Script
-```*Bash*
-#!/bin/bash
-
-echo "Installing brew packages"
-
-# Count the total number of packages in the file
-total_packages=$(wc -l < brewpkgs.txt)
-installed_count=0
-
-while read -r app; do
-    echo "Downloading $app"
-    brew install --cask "$app"
-    echo "Downloaded $app"
-
-    # Increment the installed count
-    ((installed_count++))
-
-    # Calculate the percentage of packages installed
-    percent=$((installed_count * 100 / total_packages))
-
-    echo "Progress: $installed_count/$total_packages ($percent%) installed"
-    echo "--------------------------------"
-done < brewpkgs.txt
-
-echo "All packages installed."
-
-```
-
-#### List of Brew Packages (`brewpkgs.txt`)
-```*Text*
-google-chrome
-arc
-autojump
-gh
-python
-anki
-tabby
-cleanshot
-warp
-speedtest-cli
-sqlite
-jupyterlab
-googletest
-brave-browser
-emacs
-jetbrains-toolbox
-neovim
-telegram
-clay
-notion
-raindropio
-around
-iterm2
-pycharm
-tailscale
-numi
-mos
-clion
-alfred
-dataspell
-gnuradio
-whatsapp
-microsoft-office
-trash
-rename
-tree
-visual-studio-code
-cmake
-node
-discord
-zoom
-slack
-logi-options-plus
-rectangle-pro
-mactex
-spotify
-vimcal
-superhuman
-todoist
-automattic-texts
-pitch
-
-```
+This guide is going to be a living document, and I'll be updating it as I find new apps or tools that I find useful.
 
 
 
-#### Upgrading Casks
-During your duration of using this, it's periodically worth upgrading your casks - 
-```*Bash*
-brew upgrade --cask
+Made the installation function runnable -
+```shell
+chmod -R +x .
+
 ```
 
 #### App Store Specific 
@@ -146,38 +43,3 @@ brew upgrade --cask
 * [PitchBook](https://chromewebstore.google.com/detail/pitchbook-extension-for-g/lpkjmgldcglmfilmnkcacbolkpkghdaa)
 * [Raindrop](https://chromewebstore.google.com/detail/raindropio/ldgfbffkinooeloadekpmfoklnobpien)
 * [Tweet Hunter](https://chromewebstore.google.com/detail/tweet-hunter-x-sidebar-fo/amoldiondpmjdnllknhklocndiibkcoe)
-
-# Dock
-* Finder
-* Arc
-* Superhuman
-* Vimcal
-* Bear
-* Clay
-* Todoist
-* Texts
-* Cleft
-* Goodnotes
-* Notion
-* Figma
-* Pitch
-* Around
-* Zoom
-* WhatsApp
-* iMessage
-* Facetime
-* Telegram
-* Spotify
-* Discord
-* Bitwarden
-* Slack
-* Find My
-* Word
-* Excel
-* Pitchbook
-* App Store
-* iTerm2
-* Visual Studio Code
-* Pycharm
-* Clion
-
