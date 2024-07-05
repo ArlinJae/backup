@@ -1,15 +1,14 @@
 #!/bin/bash
 
 echo "[brew_install.sh] Installing Homebrew..."
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "[brew_install.sh] Sourcing list of packages..."
-PACKAGE_LIST="brew_packages.txt"
+PACKAGE_LIST="config_brew.txt"
 
 current_package_number=0
 failed_packages=()
 
-cd /configs || exit
 
 # shellcheck disable=SC2126
 total_packages=$(grep -v '^!' "$PACKAGE_LIST" | wc -l | xargs)
