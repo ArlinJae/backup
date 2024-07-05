@@ -25,7 +25,6 @@ sqlite
 jupyterlab
 googletest
 brave-browser
-emacs
 jetbrains-toolbox
 neovim
 telegram
@@ -300,11 +299,5 @@ modern-csv
 motrix
 ollamac
 pearcleaner
-raycast
-roam-research
 shortcat
 tabby
-tex-live-utility
-visual-studio-code
-warp
-zettlr
