@@ -11,17 +11,6 @@ chmod -R +x .
 
 ```
 
-#### App Store Specific 
-* [Goodnotes](https://apps.apple.com/ca/app/goodnotes-6/id1444383602)
-* [Toggl Track](https://apps.apple.com/ca/app/toggl-track-hours-time-log/id1291898086)
-* [Testflight](https://apps.apple.com/ca/app/testflight/id899247664)
-* [Path](https://apps.apple.com/ca/app/path-help-me-decide/id1561401686)
-* [App Uninstaller](https://apps.apple.com/ca/app/delete-apps-uninstaller/id1033808943?mt=12)
-* [XCode](https://apps.apple.com/ca/app/xcode/id497799835?mt=12)
-* [Polar](https://apps.apple.com/ca/app/polarr-pro-photo-editor/id1077124956)
-* [Handmirror](https://apps.apple.com/ca/app/hand-mirror/id1502839586?mt=12)
-* [Bear](https://apps.apple.com/ca/app/bear-markdown-notes/id1091189122?mt=12)
-
 # Setting Up The Browser
 ###### Shopping
 * [Aeroplan Shopping](https://chromewebstore.google.com/detail/aeroplan-shopping-button/jcggkkmhpnjfdkbdopniflkghfkgoalo)
