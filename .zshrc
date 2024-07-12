@@ -14,7 +14,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$PATH:/Users/jairelan/.spicetify
 alias rm='rm -iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
