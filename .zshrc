@@ -19,6 +19,8 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias python='python3'
 alias pip='pip3'
+alias charm='pycharm'
+alias v='nvim'
 alias glci='gitlab-ci-local --cwd .'
 alias last='ls -t | head -n1'
 
